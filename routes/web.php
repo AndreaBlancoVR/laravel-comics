@@ -228,7 +228,60 @@ Route::get('/', function () {
             ],
         ],
     ];
+
+    $headerMenu = [
+        [
+            "text" => "Character",
+            "href" => "#",
+        ],
+        [
+            "text" => "Comics",
+            "href" => "#",
+        ],
+        [
+            "text" => "Movies",
+            "href" => "#",
+        ],
+        [
+            "text" => "TV",
+            "href" => "#",
+        ],
+        [
+            "text" => "Games",
+            "href" => "#",
+        ],
+        [
+            "text" => "Collectibles",
+            "href" => "#",
+        ],
+        [
+            "text" => "Videos",
+            "href" => "#",
+        ],
+        [
+            "text" => "Fans",
+            "href" => "#",
+        ],
+        [
+            "text" => "News",
+            "href" => "#",
+        ],
+        [
+            "text" => "Shop",
+            "href" => "#",
+    ],
+    ];
+
     return view('pages.homepage', [
-        "comics" => $comics
-    ]);
+        'comics' => $comics,
+        'headerMenu' => $headerMenu,       
+    ])
+    //->with('headerMenu', $headerMenu);
+    ;
+
 });
+
+Route::get('/shop', function () {
+    return view('shop');
+});
+

@@ -1,0 +1,77 @@
+body {
+  font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  height: 118px;
+  justify-content: center;
+  display: flex;
+}
+
+.header .container-fluid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header .container {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.header .main-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header .main-nav ul {
+  display: flex;
+  padding: 0 14px;
+  gap: 34px;
+}
+
+.header .main-nav .nav__item a {
+  text-decoration: none;
+  color: currentColor;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header .main-nav .nav__item.active {
+  color: #0282F9;
+  position: relative;
+}
+
+.header .main-nav .nav__item.active::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #0282F9;
+  position: absolute;
+  top: 63px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
