@@ -8,6 +8,14 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        Hello Word
+        <p>
+            Hello Word
+        </p>
+        
+
+        <?php
+        var_dump($comics)
+        ?>
+
     </body>
 </html>
