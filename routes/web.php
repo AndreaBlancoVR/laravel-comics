@@ -269,12 +269,42 @@ Route::get('/', function () {
         [
             "text" => "Shop",
             "href" => "#",
-    ],
+        ],
+    ];
+
+    $mainMenu = [
+        [
+          "text" => "Digital Comics",
+          "href" => "#",
+          "image" => "/img/buy-comics-digital-comics.png"
+        ],
+        [
+          "text" => "DC Merchandise",
+          "href" => "#",
+          "image" => "/img/buy-comics-merchandise.png"
+        ],
+        [
+          "text" => "Subscription",
+          "href" => "#",
+          "image" => "/img/buy-comics-subscriptions.png"
+        ],
+        [
+          "text" => "Comic Shop Locator",
+          "href" => "#",
+          "image" => "/img/buy-comics-shop-locator.png"
+        ],
+        [
+          "text" => "DC Power VISA",
+          "href" => "#",
+          "image" => "/img/buy-dc-power-visa.svg"
+        ],
+        
     ];
 
     return view('pages.homepage', [
         'comics' => $comics,
-        'headerMenu' => $headerMenu,       
+        'headerMenu' => $headerMenu, 
+        'mainMenu' => $mainMenu,   
     ])
     //->with('headerMenu', $headerMenu);
     ;
