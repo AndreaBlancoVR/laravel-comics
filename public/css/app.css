@@ -277,3 +277,102 @@ ul {
   text-transform: uppercase;
 }
 
+.footer {
+  justify-content: center;
+  display: flex;
+}
+
+.footer .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.footer .container .footer_up {
+  width: 1280px;
+  height: 370px;
+  display: flex;
+}
+
+.footer .container .footer_up .footer_up-left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 30px;
+  gap: 25px;
+}
+
+.footer .container .footer_up .footer_up-left h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer .container .footer_up .footer_up-left .menu {
+  padding: 0;
+}
+
+.footer .container .footer_up .footer_up-left .menu .menu__item a {
+  text-decoration: none;
+  color: #959595;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer .container .footer_up .footer_up-right {
+  width: 50%;
+  background-image: url("/img/dc-logo-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer .container .footer_down {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  background-color: #303030;
+}
+
+.footer .container .footer_down .footer_down-wrapper {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .container .footer_down .sign-up a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #0282F9;
+  padding: 17px 15px;
+}
+
+.footer .container .footer_down .social-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #0282F9;
+  text-transform: uppercase;
+}
+
+.footer .container .footer_down .social-wrapper ul {
+  display: contents;
+}
+
+.footer .container .footer_down .social-wrapper ul a {
+  display: contents;
+}
+
+.footer .container .footer_down .social-items {
+  display: flex;
+  gap: 19px;
+}
+

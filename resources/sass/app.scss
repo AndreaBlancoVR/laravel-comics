@@ -225,36 +225,6 @@ ul {
           display: block;
       }
 
-      // .card-wrapper {
-      //   display: flex;
-      //   flex-direction: column;
-      //   width: calc(95% / 6);
-      //   height: 240px;
-
-      // }
-
-      // .card-header {
-      //   display: flex;
-      //   position: relative;
-      //   width: 185px;
-      //   height: 185px;
-
-      //   img {
-      //         display: flex;
-      //         width: 100%;
-      //         object-fit: cover;
-      //         object-position: top;
-      //   }
-      // }
-
-      // .card-footer {
-      //   width: 100%;
-      //   height: 55px;
-      //   line-height: 55px;
-      //   text-transform: uppercase;
-      //   font-size: 14px;
-      // }
-
       .row_2 {
         display: flex;
         justify-content: center;
@@ -320,3 +290,111 @@ ul {
 
 
 // FOOTER
+
+.footer {
+    justify-content: center;
+    display: flex;
+
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url("/img/footer-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      .footer_up {
+        width: 1280px;
+        height: 370px;
+        
+        display: flex;
+
+        .footer_up-left {
+          width: 50%;
+          display: flex;
+          justify-content: flex-start;
+          padding-top: 30px;
+          gap: 25px;
+
+          h2 {
+            color: white;
+            text-transform: uppercase;
+          }
+
+          .menu {
+            padding: 0;
+            .menu__item {
+              
+
+              a {
+              text-decoration: none;
+              color: #959595;
+              font-size: 12px;
+              font-weight: 700;
+              
+              }
+            }
+          }
+        }
+
+        .footer_up-right {
+          width: 50%;
+          background-image: url("/img/dc-logo-bg.png");
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        
+      }
+      .footer_down {
+        width: 100%;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        background-color: #303030;
+
+        .footer_down-wrapper {
+          width: 1280px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .sign-up {
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 2px solid #0282F9;
+            padding: 17px 15px
+          }
+        }
+
+        .social-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          color: #0282F9;
+          text-transform: uppercase;
+
+          ul {
+            display: contents;
+
+            a {
+              display: contents;
+            }
+          }
+        }
+
+        .social-items {
+          display: flex;
+          gap: 19px;
+        }
+      }
+    }
+  }

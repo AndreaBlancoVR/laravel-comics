@@ -301,10 +301,146 @@ Route::get('/', function () {
         
     ];
 
+    $UlOne = [
+        [
+          "text" => "Characters",
+          "href" => "#",
+        ],
+        [
+          "text" => "Comics",
+          "href" => "#",
+        ],
+        [
+          "text" => "Movies",
+          "href" => "#",
+        ],
+        [
+          "text" => "TV",
+          "href" => "#",
+        ],
+        [
+          "text" => "Games",
+          "href" => "#",
+        ],
+        [
+          "text" => "Videos",
+          "href" => "#",
+        ],
+        [
+          "text" => "News",
+          "href" => "#",
+        ],
+        [
+          "text" => "DC Shop",
+          "href" => "#",
+        ],        
+    ];
+
+    $UlTwo = [
+        [
+          "text" => "Shop DC",
+          "href" => "#",
+        ],
+        [
+          "text" => "Shop DC Collectibles",
+          "href" => "#",
+        ],
+    ];
+
+    $UlThree = [
+        [
+          "text" => "Terms of Use",
+          "href" => "#",
+        ],
+        [
+          "text" => "Privacy Policy (New)",
+          "href" => "#",
+        ],
+        [
+          "text" => "Ad Choices",
+          "href" => "#",
+        ],
+        [
+          "text" => "Advertising",
+          "href" => "#",
+        ],
+        [
+          "text" => "Jobs",
+          "href" => "#",
+        ],
+        [
+          "text" => "Subscriptions",
+          "href" => "#",
+        ],
+        [
+          "text" => "CPSC Certificates",
+          "href" => "#",
+        ],
+        [
+          "text" => "Ratings",
+          "href" => "#",
+        ],
+        [
+          "text" => "Shop Help",
+          "href" => "#",
+        ],  
+        [
+          "text" => "Contact Us",
+          "href" => "#",
+        ],          
+    ];
+
+    $UlFour = [
+        [
+          "text" => "DC",
+          "href" => "#",
+        ],
+        [
+          "text" => "MAD Magazine",
+          "href" => "#",
+        ],
+        [
+          "text" => "DC Kids",
+          "href" => "#",
+        ],
+        [
+          "text" => "DC Universe",
+          "href" => "#",
+        ],
+        [
+          "text" => "DC Power Visa",
+          "href" => "#",
+        ],
+    ];
+
+    $UlIcons = [
+        [
+          "icon" => "/img/footer-facebook.png",
+        ],
+        [
+          "icon" => "/img/footer-twitter.png",
+        ],
+        [
+          "icon" => "/img/footer-youtube.png",
+        ],
+        [
+          "icon" => "/img/footer-pinterest.png",
+        ],
+        [
+          "icon" => "/img/footer-periscope.png",
+        ],
+    ];
+
     return view('pages.homepage', [
         'comics' => $comics,
         'headerMenu' => $headerMenu, 
-        'mainMenu' => $mainMenu,   
+        'mainMenu' => $mainMenu,  
+        'UlOne' => $UlOne,
+        'UlTwo' => $UlTwo,
+        'UlThree' => $UlThree,
+        'UlFour' => $UlFour,
+        'UlIcons' => $UlIcons,
+
     ])
     //->with('headerMenu', $headerMenu);
     ;
