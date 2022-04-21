@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $comics = config('comics');
-
     $headerMenu = [
         [
             "text" => "Character",
@@ -59,7 +58,6 @@ Route::get('/', function () {
             "href" => "#",
         ],
     ];
-
     $mainMenu = [
         [
           "text" => "Digital Comics",
@@ -88,7 +86,6 @@ Route::get('/', function () {
         ],
         
     ];
-
     $UlOne = [
         [
           "text" => "Characters",
@@ -123,7 +120,6 @@ Route::get('/', function () {
           "href" => "#",
         ],        
     ];
-
     $UlTwo = [
         [
           "text" => "Shop DC",
@@ -134,7 +130,6 @@ Route::get('/', function () {
           "href" => "#",
         ],
     ];
-
     $UlThree = [
         [
           "text" => "Terms of Use",
@@ -177,7 +172,6 @@ Route::get('/', function () {
           "href" => "#",
         ],          
     ];
-
     $UlFour = [
         [
           "text" => "DC",
@@ -200,7 +194,6 @@ Route::get('/', function () {
           "href" => "#",
         ],
     ];
-
     $UlIcons = [
         [
           "icon" => "/img/footer-facebook.png",
@@ -238,7 +231,6 @@ Route::get('/', function () {
 Route::get('single/{id}', function($id) {
 
     $comics = config('comics');
-
     $headerMenu = [
       [
           "text" => "Character",
@@ -281,7 +273,6 @@ Route::get('single/{id}', function($id) {
           "href" => "#",
       ],
     ];
-
     $mainMenu = [
         [
           "text" => "Digital Comics",
@@ -310,7 +301,6 @@ Route::get('single/{id}', function($id) {
         ],
         
     ];
-
     $UlOne = [
         [
           "text" => "Characters",
@@ -345,7 +335,6 @@ Route::get('single/{id}', function($id) {
           "href" => "#",
         ],        
     ];
-
     $UlTwo = [
       [
         "text" => "Shop DC",
@@ -356,7 +345,6 @@ Route::get('single/{id}', function($id) {
         "href" => "#",
       ],
     ];
-
     $UlThree = [
         [
           "text" => "Terms of Use",
@@ -399,7 +387,6 @@ Route::get('single/{id}', function($id) {
           "href" => "#",
         ],          
     ];
-
     $UlFour = [
         [
           "text" => "DC",
@@ -422,7 +409,6 @@ Route::get('single/{id}', function($id) {
           "href" => "#",
         ],
     ];
-
     $UlIcons = [
         [
           "icon" => "/img/footer-facebook.png",
@@ -440,8 +426,6 @@ Route::get('single/{id}', function($id) {
           "icon" => "/img/footer-periscope.png",
         ],
     ];
-
-    
 
     abort_if( !isset($comics[ $id ]), 404 );
 
@@ -464,6 +448,7 @@ Route::get('single/{id}', function($id) {
       'UlThree' => $UlThree,
       'UlFour' => $UlFour,
       'UlIcons' => $UlIcons,  
+      // 'single' => $single,
     ])   
     ->with('single', $single);
   

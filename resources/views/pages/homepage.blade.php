@@ -17,8 +17,10 @@
         <div class="jumbo">
           <div class="row">
             <ul>
-            @foreach($comics as $elem)
+            @foreach($comics as $key => $elem)
+              
                 <li class="card-wrapper">
+                  <a href="single/{{ $key }}">
                     <figure class="card-header">
                         <div class="overlay">
                             <p>
@@ -31,7 +33,9 @@
                     <h3 class="card-footer">
                     <span>{{ $elem['series'] }}</span>
                     </h3>
+                  </a>
                 </li>
+              
             @endforeach
             </ul>
            
