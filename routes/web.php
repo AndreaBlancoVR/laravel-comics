@@ -20,42 +20,53 @@ Route::get('/', function () {
         [
             "text" => "Character",
             "href" => "#",
+            "routeName" => "",
         ],
         [
             "text" => "Comics",
             "href" => "#",
+            "routeName" => "comics.index",
         ],
         [
             "text" => "Movies",
             "href" => "#",
+            "routeName" => "",
+            
         ],
         [
             "text" => "TV",
             "href" => "#",
+            "routeName" => "",
         ],
         [
             "text" => "Games",
             "href" => "#",
+            "routeName" => "",
         ],
         [
             "text" => "Collectibles",
             "href" => "#",
+            "routeName" => "",
         ],
         [
             "text" => "Videos",
             "href" => "#",
+            "routeName" => "",
         ],
         [
             "text" => "Fans",
             "href" => "#",
+            "routeName" => "",
         ],
         [
             "text" => "News",
             "href" => "#",
+            "routeName" => "",
         ],
         [
             "text" => "Shop",
             "href" => "#",
+            "routeName" => "",
         ],
     ];
     $mainMenu = [
@@ -223,11 +234,11 @@ Route::get('/', function () {
         'UlIcons' => $UlIcons,
 
     ])
-    // ->name('home')
+    
     //->with('headerMenu', $headerMenu);
 ;
 
-});
+})->name('comics.index');
 
 Route::get('single/{id}', function($id) {
 
@@ -236,42 +247,53 @@ Route::get('single/{id}', function($id) {
       [
           "text" => "Character",
           "href" => "#",
+          "routeName" => "",
       ],
       [
           "text" => "Comics",
           "href" => "#",
+          "routeName" => "comics.show",
       ],
       [
           "text" => "Movies",
           "href" => "#",
+          "routeName" => "",
+          
       ],
       [
           "text" => "TV",
           "href" => "#",
+          "routeName" => "",
       ],
       [
           "text" => "Games",
           "href" => "#",
+          "routeName" => "",
       ],
       [
           "text" => "Collectibles",
           "href" => "#",
+          "routeName" => "",
       ],
       [
           "text" => "Videos",
           "href" => "#",
+          "routeName" => "",
       ],
       [
           "text" => "Fans",
           "href" => "#",
+          "routeName" => "",
       ],
       [
           "text" => "News",
           "href" => "#",
+          "routeName" => "",
       ],
       [
           "text" => "Shop",
           "href" => "#",
+          "routeName" => "",
       ],
     ];
     $mainMenu = [

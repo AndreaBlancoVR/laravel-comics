@@ -6,9 +6,11 @@
           <img src="{{ asset('img/dc-logo.png') }}" alt="">
         </figure>
         <nav class="main-nav nav">
+          {{-- @dump( Request::route()->getName() ) --}}
           <ul>
+            
               @foreach($headerMenu as $el)
-                  <li class="nav__item">   
+                  <li class="{{ Request::route()->getName() == $el['routeName'] ? 'active' : '' }} nav__item">   
                       <a :href="{{ $el['href'] }}">
                       <span>{{ $el['text'] }}</span>
                       </a>
