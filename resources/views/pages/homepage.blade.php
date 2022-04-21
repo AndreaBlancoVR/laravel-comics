@@ -20,7 +20,7 @@
             @foreach($comics as $key => $elem)
               
                 <li class="card-wrapper">
-                  <a href="single/{{ $key }}">
+                  <a href="{{ route( 'comics.show', [ 'id' => $key ] ) }}">
                     <figure class="card-header">
                         <div class="overlay">
                             <p>

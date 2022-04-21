@@ -223,8 +223,9 @@ Route::get('/', function () {
         'UlIcons' => $UlIcons,
 
     ])
+    // ->name('home')
     //->with('headerMenu', $headerMenu);
-    ;
+;
 
 });
 
@@ -452,7 +453,7 @@ Route::get('single/{id}', function($id) {
     ])   
     ->with('single', $single);
   
-})->where('id','[0-9]+');
+})->where('id','[0-9]+')->name('comics.show');
 
 Route::get('/shop', function () {
     return view('shop');
